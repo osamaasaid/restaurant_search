@@ -1,3 +1,4 @@
+<div class="results">
 <div class="container">
 
 
@@ -8,7 +9,11 @@
 <%= image_tag item.rating_img_url %> <br />
 <%= image_tag item.image_url %> <br />
 <%= item.location.display_address[0] %> <br />
+<%= item.location.city %>
+<%= item.location.state_code %>
+<%= item.location.postal_code %>  <br />
 <%= item.display_phone %>
+
 
 </div>
 <% end %>
@@ -21,4 +26,5 @@
 
 </div> -->
 <% end %>
+</div>
 </div>
