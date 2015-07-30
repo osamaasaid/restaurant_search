@@ -1,5 +1,18 @@
-<% provide(:title, @user.name) %>
-<h1>
-  <%= gravatar_for @user %>
-  <%= @user.name %>
-</h1>
+
+<% if @result %>
+<% @result.each do |item| %>
+<div class="well results">
+<h5><%= item.name %></h5>
+<%= image_tag item.rating_img_url %>
+<%= image_tag item.image_url %>
+</div>
+<% end %>
+<% end %>
+
+<% if @result.empty? %>
+<div class="well">
+<h3>No results found</h3>
+<%= link_to "Search again", show_path, class: "btn btn-primary" %>
+
+</div> -->
+<% end %>

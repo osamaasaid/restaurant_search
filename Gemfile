@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 gem 'bootstrap_form'
+gem 'yelp', require: 'yelp'
+gem 'foreman'
+gem 'rest-client'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
