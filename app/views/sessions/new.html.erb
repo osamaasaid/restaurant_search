@@ -23,11 +23,13 @@
       <%= f.label :password %><br />
       <%= f.password_field :password, class: 'form-control' %><br />
       </div>
-
+        <div class="text-center">
       <%= f.submit "Log in", class: "btn btn-primary" %><br />
-    <% end %>
-
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <% end %><br />
+        </div>
+         <div class="text-center">
+    <p><strong>New user? <%= link_to "Sign up now!", signup_path %></strong></p>
+  </div>
   </div>
 </div>
 </div>

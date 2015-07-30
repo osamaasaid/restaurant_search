@@ -8,7 +8,7 @@ class MainController < ApplicationController
   end
 
 def show
-    @query = params[:id]
+    @query = params[:query]
     # if @query
     #   response = client.search('Seattle')
     #   @place = JSON.parse(response)
@@ -16,8 +16,9 @@ def show
     #   @place = ['']
     # end
     if @query
-      response = Yelp.client.search('united states',{term: @query})
+      response = Yelp.client.search(@query)
       @result = response.businesses[0...20]
+
       # render json: @result
     else
       @result = ['']

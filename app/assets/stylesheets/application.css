@@ -19,6 +19,11 @@ h2{
   font-size: 50px;
 }
 
+h3 {
+  font-family: cursive;
+
+}
+
 
 .signup-form{
 
@@ -35,4 +40,9 @@ margin: auto;
 
 .login {
 margin-top: 100px;
+}
+
+
+.well-results {
+color: #8D3639
 }

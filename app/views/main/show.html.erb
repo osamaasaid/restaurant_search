@@ -1,10 +1,15 @@
+<div class="container">
+
 
 <% if @result %>
 <% @result.each do |item| %>
 <div class="well results">
-<h5><%= item.name %></h5>
-<%= image_tag item.rating_img_url %>
-<%= image_tag item.image_url %>
+<h3><%= item.name %></h3>
+<%= image_tag item.rating_img_url %> <br />
+<%= image_tag item.image_url %> <br />
+<%= item.location.display_address[0] %> <br />
+<%= item.display_phone %>
+
 </div>
 <% end %>
 <% end %>
@@ -16,3 +21,4 @@
 
 </div> -->
 <% end %>
+</div>
