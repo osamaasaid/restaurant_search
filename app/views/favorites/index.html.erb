@@ -1,0 +1,10 @@
+
+<% @fav_rest.each do |item| %>
+
+  <% if item.user_id == current_user.id %>
+    <ul>
+      <li><%= item.yelp_id %> </li>
+    </ul>
+  <% end %>
+
+<% end %>

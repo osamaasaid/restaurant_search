@@ -3,20 +3,20 @@
 
 
 <% if @result %>
-<% @result.each do |item| %>
-<div class="well results">
-<h3><%= item.name %></h3>
-<%= image_tag item.rating_img_url %> <br />
-<%= image_tag item.image_url %> <br />
-<%= item.location.display_address[0] %> <br />
-<%= item.location.city %>
-<%= item.location.state_code %>
-<%= item.location.postal_code %>  <br />
-<%= item.display_phone %>
+  <% @result.each do |item| %>
+    <div class="well results">
 
+      <h3><%= item.name %></h3>
+      <%= image_tag item.rating_img_url %> <br />
+      <%= image_tag item.image_url %> <br />
+      <%= item.location.display_address[0] %> <br />
+      <%= item.location.city %>
+      <%= item.location.state_code %>
+      <%= item.location.postal_code %>  <br />
+      <%= link_to('Add to Favorites', favorites_path(yelp_id: item.id), :method => :post)  %>
 
-</div>
-<% end %>
+    </div>
+  <% end %>
 <% end %>
 
 <% if @result.empty? %>

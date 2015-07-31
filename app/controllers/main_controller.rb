@@ -23,12 +23,20 @@ def show
     else
       @result = ['']
     end
-  end
+
+end
+
+
+
+
   # def about
   # end
 
   # def secret
   # end
+
+
+
 
 
 end

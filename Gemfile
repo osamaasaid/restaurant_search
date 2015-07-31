@@ -29,7 +29,7 @@ gem 'bootstrap_form'
 gem 'yelp', require: 'yelp'
 gem 'foreman'
 gem 'rest-client'
-
+gem 'rails_12factor', group: :production
 # Use Unicorn as the app server
 # gem 'unicorn'
 
