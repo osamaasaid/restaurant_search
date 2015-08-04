@@ -11,6 +11,7 @@ h1{
   font-family: monospace;
   text-align: center;
   margin-top: 70px;
+  color: gray;
 }
 
 h2{
@@ -26,8 +27,8 @@ h3 {
 
 
 .signup-form{
-
-margin: auto;
+  color: gray;
+  margin: auto;
 }
 
 .form-control {
@@ -56,5 +57,17 @@ color: #8D3639
 
 body {
 margin-top: 100px;
+background-image: url("http://media3.s-nbcnews.com/i/newscms/2015_21/561601/sour-cream-stock-today-150518-tease_2659f61230b60da576d7081a8b995c85.jpg");
+background-repeat: no-repeat
 
 }
+
+#search-bar {
+  color: black;
+}
+
+.main {
+  color: white;
+  font-family: helvetica;
+}
+

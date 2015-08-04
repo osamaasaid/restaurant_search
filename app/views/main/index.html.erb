@@ -1,9 +1,9 @@
 index
 
 
-<h1>Restaurant Search</h1>
+<h1 id="search-bar">Restaurant Search</h1>
 
-<div class="container">
+<div class="container main">
   <%= bootstrap_form_tag url: show_path do |f| %>
   <%= f.text_field :query, label: "Search by city" %>
   <div class="text-center">
